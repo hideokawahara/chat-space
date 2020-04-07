@@ -1,0 +1,23 @@
+.side_bar
+  .side_bar__user_name
+    .side_bar__user_name__top_items
+      %p.side_bar__user_name__top_items__name
+        masa
+      %ul.side_bar__user_name__top_items__icons
+        %li.side_bar__user_name__top_items__icons__edit
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.side_bar__user_name__top_items__icons__cog
+          = link_to "#" do
+            = icon('fas', 'cog')
+  .side_bar__group_list
+    .side_bar__group_list__content
+      %p.side_bar__group_list__content__name
+        techcamp
+      %p.side_bar__group_list__content__message
+        まだメッセージがありません
+    .side_bar__group_list__content
+      %p.side_bar__group_list__content__name
+        同好会
+      %p.side_bar__group_list__content__message
+        hey! 
