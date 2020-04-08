@@ -1,0 +1,36 @@
+.main_chat
+  .main_chat__group_info
+    .main_chat__group_info__left_box
+      .main_chat__group_info__left_box__current
+        test
+      %ul.main_chat__group_info__left_box__member
+        Member : 
+        %li.main_chat__group_info__member__name
+          masa
+    .main_chat__group_info__edit
+      Edit
+  .main_chat__message_list
+    .main_chat__message_list__messages
+      .main_chat__message_list__messages__upper
+        %a.main_chat__message_list__messages__upper__talker
+          masa
+        %a.main_chat__message_list__messages__upper__date
+          2019/11/20(Wed) 17:43:01
+      %p.main_chat__message_list__messages__text
+        おはよう
+    .main_chat__message_list__messages
+      .main_chat__message_list__messages__upper
+        %a.main_chat__message_list__messages__upper__talker
+          kimu
+        %a.main_chat__message_list__messages__upper__date
+          2019/11/20(Wed) 18:43:01
+      %p.main_chat__message_list__messages__text
+        hello
+  .main_chat__form
+    %form.main_chat__form__new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          =icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+    %input{type: "submit", value: "Send", class: "main_chat__form__submit-btn"}
