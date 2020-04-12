@@ -61,7 +61,7 @@ $('#new_message').on('submit', function(e){
 var reloadMessages = function() {
   //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
   var last_message_id = $('.main_chat__message_list__messages__upper:last').data("message-id");
-  // console.log(last_message_id)
+  
   $.ajax({
     //ルーティングで設定した通り/groups/id番号/api/messagesとなるよう文字列を書く
     url: "api/messages",
@@ -72,13 +72,13 @@ var reloadMessages = function() {
     data: {id: last_message_id}
   })
   .done(function(messages) {
-    console.log(messages)
+   
     if (messages.length !== 0) {
      //追加するHTMLの入れ物を作る
      var insertHTML = '';
      //配列messagesの中身一つ一つを取り出し、HTMLに変換したものを入れ物に足し合わせる
      $.each(messages, function(i, message) {
-      console.log(message)
+      
        insertHTML += buildHTML(message)
      });
      //メッセージが入ったHTMLに、入れ物ごと追加
