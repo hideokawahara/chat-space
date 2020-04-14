@@ -132,6 +132,9 @@
         font-size: 14px;
         color: #434a54;
       }
+      p {
+        margin-bottom: 40px;
+      }
     }
   }
   &__form {
@@ -181,4 +184,7 @@
       }
   }
   
+}
+.new_message {
+  width: 100%;
 }

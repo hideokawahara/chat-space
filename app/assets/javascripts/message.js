@@ -49,7 +49,7 @@ $('#new_message').on('submit', function(e){
  })
   .done(function(data){
     var html = buildHTML(data);
-    $('.main_chat__message_list').append(html);
+    $('.main_chat__message_list__messages').append(html);
     $('.main_chat__message_list').animate({ scrollTop: $('.main_chat__message_list')[0].scrollHeight});
     $('form')[0].reset();
     $('.main_chat__form__submit-btn').prop('disabled', false);
