@@ -32,7 +32,7 @@
           
             &__edit {
               margin-right: 5px;
-              a {
+              a {;
                 color: #ffffff;
               }
             }
@@ -53,6 +53,10 @@
       text-decoration: none;
       margin-bottom: 40px;
       font-weight: bold;
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
       &__name {
         margin: 0 0 5px;
         font-size: 15px;
@@ -98,6 +102,10 @@
       line-height: 40px;
       border: 1px solid #38aef0;
       padding: 0 20px;
+      a {
+        color: #38aef0;
+        text-decoration: none;
+      }
     }
   }
   &__message_list {
